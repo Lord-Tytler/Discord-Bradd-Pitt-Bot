@@ -10,16 +10,16 @@ client.on('message', msg => {
   var images = 20;
   var number = Math.floor(Math.random() * images + 1);
   
-  if (msg.content.includes('brad') || msg.content.includes('pitt')) {
+  if (msg.content.includes('brad') && msg.content.includes('pitt')) {
     msg.channel.send('Did somebody say Brad Pitt?');
 	msg.channel.send( {files: ["./images/" + number + ".jpg"]} )
-  } else if (msg.content.includes('Brad') || msg.content.includes('Pitt')) {
+  } else if (msg.content.includes('Brad') && msg.content.includes('Pitt')) {
     msg.channel.send('Did somebody say Brad Pitt?');
 	msg.channel.send( {files: ["./images/" + number + ".jpg"]} )
-  } else if (msg.content.includes('Brad') || msg.content.includes('pitt')) {
+  } else if (msg.content.includes('Brad') && msg.content.includes('pitt')) {
     msg.channel.send('Did somebody say Brad Pitt?');
 	msg.channel.send( {files: ["./images/" + number + ".jpg"]} )
-  } else if (msg.content.includes('brad') || msg.content.includes('Pitt')) {
+  } else if (msg.content.includes('brad') && msg.content.includes('Pitt')) {
     msg.channel.send('Did somebody say Brad Pitt?');
 	msg.channel.send( {files: ["./images/" + number + ".jpg"]} )
   }
